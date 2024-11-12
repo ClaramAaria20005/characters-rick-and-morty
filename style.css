@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    color: #fff;
+}
+
+body {
+    background-image: url('./assets/imagem-de-fundo2.jpg');
+    background-size: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50%;
+    height: auto;
+}
+
+.logo-text {
+    font-family: "Rubik Mono One", sans-serif;
+    font-size: 15px;
+    
+}
+
+.social-media {
+    width: 130px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+i {
+    font-size: 1.2rem;
+}
+
+i:hover {
+    color: greenyellow;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+}
+
+h2 {
+    font-family: "Rubik Mono One", sans-serif;
+    margin-bottom: 20px;
+    color: #f1f1f1;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.main-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 10px;
+    padding: 0 20px;
+}
+
+.cards {
+    width: 230px;
+    height: 400px;
+    background-position: 60% 50%;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 5px;
+}
+
+.cards:hover {
+    transform: scale(1.02);
+}
+
+.character-name-bg {
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.character-name {
+    font-family: "Rubik Mono One", sans-serif;
+    color:#f1f1f1;
+    font-size: 1rem;
+}
+
+.buttons {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    width: 80px;
+    height: 30px;
+    background-color: #f1f1f1;
+    color: #000;
+    font-weight: 700;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid #000;
+    outline: none;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #000;
+    color: #f1f1f1;
+}
+
+#back-button {
+    visibility: hidden;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    margin: 40px 0 20px 0;
+}
+
+.footer-logo {
+    font-family: "Rubik Mono One", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.copyrigth {
+    font-weight: 500;
+}
+
+.modal {
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+  }
+  
+  .modal-content {
+    width: 25vw;
+    height: 70vh;
+    background-color: #0d0d0d;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 30px 10px;
+    align-items: center;
+  }
+  
+  .character-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-position: 50% 10%;
+    background-size: cover;
+  }
+  
+  .character-details {
+    font-family: "Rubik Mono One", sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    color: #f1f1f1;
+  }
+
+  @media(max-width: 768px){
+    h2{
+        text-align: center;
+        margin: 0 10px 0 10px;
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .modal-content{
+        width: 40vw;
+    }
+  }
+
+  @media(max-width: 500px){
+    .logo {
+        width: 180px;
+    }
+
+    .logo-text {
+        font-size: 14px;
+    }
+
+    .social-media {
+        width: 65px;
+        padding: 0 5px;
+    }
+
+    h2{
+        font-size: 17px;
+    }
+
+    .cards {
+        width: 50vw;
+    }
+
+    .modal-content {
+        width: 48vw;
+        height: 42vh;
+    }
+
+    .character-details {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .footer-logo {
+        font-size: 18px;
+        text-align: center;
+    }
+ }
+
+ @media(max-width: 440px) {
+    .logo {
+        width: 160px;
+    }
+
+    .logo-text {
+        font-size: 13px;
+    }
+
+    .social-media {
+        width: 62px;
+        padding: 0 3px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    .cards {
+        width: 55vw;
+    }
+
+    .modal-content {
+        width: 53vw;
+    }
+
+    .footer-logo {
+        font-size: 16px;
+        text-align: center;
+    }
+
+ }
+
+ @media(max-width: 395px) {
+    .logo{
+        width: 160px;
+    }
+
+    .logo-text{
+        font-size: 12px;
+    }
+
+    .social-media {
+        width: 55px;
+        padding: 0 3px;
+    }
+
+    h2{
+        font-size: 14.5px;
+    }
+
+    .cards {
+        width: 58vw;
+    }
+
+    .modal-content{
+        width: 55vw;
+        height: 52vh;
+    }
+
+    .footer-logo {
+        font-size: 14px;
+        text-align: center;
+    }
+ }
